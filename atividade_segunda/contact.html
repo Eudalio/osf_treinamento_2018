@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade de Segunda feira</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Minha página </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="#">Example One</a>
+                    <a class="dropdown-item" href="#">Example Two</a>
+                    <a class="dropdown-item" href="#">Example Three</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <div class="main jumbotron">
+            <div class="accordion" id="accordionTeste">
+                <h1 class="display-6">Entre em contato</h1>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Conheça meus projetos
+                        </button>
+                    </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTeste">
+                    <div class="card-body">
+                        <a href="https://github.com/Eudalio" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Linkedin
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTeste">
+                    <div class="card-body">
+                        <a href="https://www.linkedin.com/in/eudaliosousa/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        G-mail
+                        </button>
+                    </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTeste">
+                    <div class="card-body">
+                        <a href="">tonnydallios@gmail.com</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a href="#"> TonnyDállios.com</a>
+    </footer>
+
+
+    <script src="jquery.js"></script>
+    <script src="atividade.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html>
