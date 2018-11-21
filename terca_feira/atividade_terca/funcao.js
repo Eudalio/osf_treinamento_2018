@@ -14,7 +14,11 @@ function listNumbersRandom () {
     for (let i = 0; i < 10; i++) {
         list.push(numberRandom());        
     }
-    return list;
+    return list.sort((a,b) => {
+        if(a < b) return -1
+        if(a > b) return 1
+        return 0
+    });
 }
 
 module.exports = { oddOrEven, numberRandom, listNumbersRandom }
