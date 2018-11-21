@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser')
 
-var funcoesExternas = require('./funcao');
+var { oddOrEven, numberRandom, listNumbersRandom } = require('./funcao');
 
 app.set("views", __dirname + '/views')
 app.set("view engine", "ejs")
@@ -35,11 +35,11 @@ app.get('/html', function(req, res) {
 
 app.get('/rota1/:num', (req, res) => {
 	const { num } = req.params
-	res.send(`O número ${num} enviado na requisição é: ${funcoesExternas.oddOrEven(num)}.`)
+	res.send(`O número ${num} enviado na requisição é: ${oddOrEven(num)}.`)
 })
 
 app.get('/rota2', (req, res) => {
-	res.render('random', { num: funcoesExternas.numberRandom() })
+	res.render('random', { num: numberRandom() })
 })
 
 app.get('/rota3/:num', (req, res) => {
@@ -48,7 +48,7 @@ app.get('/rota3/:num', (req, res) => {
 })
 
 app.get('/rota4', (req, res) => {
-	let list = funcoesExternas.listNumbersRandom()
+	let list = listNumbersRandom()
 	res.render('listaNumbers', { list })
 })
 
